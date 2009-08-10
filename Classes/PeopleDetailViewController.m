@@ -60,6 +60,8 @@
 
 
 - (void)dealloc {
+    [managedObjectContext release];
+    [person release];
     [super dealloc];
 }
 

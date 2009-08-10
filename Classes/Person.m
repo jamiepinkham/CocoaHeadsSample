@@ -18,4 +18,9 @@
     return [NSMutableString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];
 }
 
+-(void)dealloc{
+    [fullName release];
+    [super dealloc];
+}
+
 @end
