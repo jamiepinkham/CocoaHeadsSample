@@ -10,12 +10,12 @@
 #import <CoreData/CoreData.h>
 
 @interface Person : NSManagedObject {
-    NSString *fullName;
 }
 
 @property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *lastName;
-@property (nonatomic, copy) NSString *fullName;
 @property (nonatomic, retain) NSNumber *displayIndex;
+
+- (NSString *)fullName;
 
 @end
